@@ -1,0 +1,103 @@
+---
+title: "Dalton Kutzen"
+output-file: "Dalton Kutzen-Resume"
+
+format:
+  typst:
+    papersize: us-letter
+    margin:
+      x: 0.62in
+      y: 0.55in
+    fontsize: 9.5pt
+    linkcolor: "#1F4E79"
+
+---
+```{=typst}
+#align(center)[
+```
+Provo, Utah 
+
+[dalton@kutzen.org](mailto:dalton@kutzen.org) ·
+[GitHub](https://github.com/dkutzen22) ·
+[LinkedIn](https://www.linkedin.com/in/daltonkutzen)
+
+```{=typst}
+]
+```
+
+# Education
+```{=typst}
+#grid(
+  columns: (1fr, auto),
+  align: (left, right),
+  gutter: 0pt,
+  [#strong[Brigham Young University — B.S. Molecular Biology]],
+  [Jan 2025–Apr 2028],
+)
+```
+Provo, Utah
+
+- Coursework: molecular biology, genetics, statistics, calculus, bioinformatics, machine learning, and systems biology.
+- Focused on computational approaches to genomics and reproducible biological research.
+
+# Experience
+
+## Bioinformatics Researcher / Software Developer
+
+[Lab, Project, or Organization] · Provo, Utah · [Month Year]–Present
+
+- Developed **Phantom**, a reproducible Snakemake workflow for bacteriophage genome annotation, comparative genomics, and post-annotation analysis.
+- Built Python and R tools for genomic data processing, visualization, and research-ready reports.
+- Used Conda environments, GitHub Actions, Git, and structured configuration files to make analyses portable and repeatable.
+- Documented workflows and computational assumptions to support collaboration and reproducibility.
+
+## Systems and Infrastructure Projects
+
+Personal homelab · [Month Year]–Present
+
+- Administer Linux servers, containers, and virtual machines using Proxmox and self-hosted services.
+- Designed practical monitoring, networking, backup, and automation workflows for reliable personal infrastructure.
+- Evaluated hardware with attention to cost, power use, repairability, and future expansion.
+
+# Selected Projects
+
+## Phantom — Bacteriophage Analysis Workflow
+
+[GitHub repository](https://github.com/your-username/phantom)
+
+- Modular Snakemake pipeline for phage genome annotation and downstream comparative analysis.
+- Uses isolated Conda environments and declarative workflow rules to make runs reproducible across systems.
+- Produces organized intermediate files, results, logs, and publication-oriented visualizations.
+
+## Phage Visualization Tools
+
+[GitHub repository](https://github.com/your-username)
+
+- Developed R and Python utilities for post-annotation exploration of bacteriophage genomes.
+- Designed figures and tables to help interpret gene content, genome architecture, and comparative results.
+
+## Self-Hosted Research Infrastructure
+
+[Project documentation](https://your-site.example/projects)
+
+- Built a Linux-based environment for code hosting, containers, services, and research project organization.
+- Applied infrastructure-as-code and documentation practices to reduce configuration drift.
+
+# Technical Skills
+
+| Area | Tools |
+|---|---|
+| Programming | Python, R, Bash, SQL, Git |
+| Bioinformatics | Snakemake, Conda, genome annotation, comparative genomics, sequence analysis |
+| Data & Visualization | pandas, Biopython, tidyverse, ggplot2, Quarto |
+| Infrastructure | Linux, Docker/containers, Proxmox, networking, self-hosted services |
+| Reproducibility | GitHub Actions, CI/CD, environment management, documentation, Markdown |
+
+# Leadership & Activities
+
+## [Role or Organization]
+
+[Organization] · [Month Year]–[Month Year]
+
+- Add a concrete accomplishment, responsibility, or measurable contribution.
+- Prefer outcomes over generic descriptions: what you built, improved, analyzed, organized, or enabled.
