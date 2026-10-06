@@ -160,20 +160,3 @@ style="text-align: center;"
 
 when rendering to Typst. Native Typst alignment is more reliable for PDF output.
 
-## Custom Styling
-
-The optional `resume-style.typ` file contains Typst formatting rules. It can control:
-
-- Font family and size
-- Margins and page layout
-- Heading colors and separator lines
-- Link colors
-- Paragraph spacing
-- List spacing
-
-A minimal example:
-
-```typst
-#let accent = rgb("#1F4E79")
-
-#set text(
