@@ -1,6 +1,6 @@
 ---
 title: "Dalton Kutzen"
-output-file: "Dalton Kutzen-Resume"
+output-file: "Dalton_Kutzen-Resume"
 
 format:
   typst:
