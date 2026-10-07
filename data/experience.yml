@@ -2,7 +2,7 @@
   organization: "Terooatea Lab, Brigham Young University"
   location: "Provo, UT"
   dates: "Aug 2026 – Present"
-  show_in: ["resume", "cv"]
+  show_in: ["cv"]
   details:
     - "Developed computational methods and benchmark evaluations for high-dimensional single-cell RNA-seq (scRNA-seq) and pooled Perturb-seq screens (`anchor-op`)."
     - "Implemented target-grouped nested cross-validation and matched signal-to-noise ratio (SNR) controls in Python to evaluate prediction performance against baseline models."
@@ -32,7 +32,7 @@
   organization: "Brigham Young University"
   location: "Provo, UT"
   dates: "Aug 2025 – May 2026"
-  show_in: ["cv"]
+  show_in: ["resume", "cv"]
   details:
     - "Oversaw deployment, security, and maintenance of 1,000+ campus workstations and lab computers, minimizing system downtime."
     - "Supported a community of 5,000+ users by troubleshooting hardware, software, and wireless networking issues for academic and administrative operations."
