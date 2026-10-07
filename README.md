@@ -22,21 +22,21 @@ quarto check
 
 ```text
 .
-├── _quarto.yml          # Project-level Quarto configuration
-├── resume.qmd           # Resume master document (1-page focused)
-├── cv.qmd               # CV master document (multi-page comprehensive)
-├── sections/            # Modular section partials
-│   ├── _contact.qmd     # Contact info (shared)
-│   ├── _education.qmd   # Education (shared)
-│   ├── _experience.qmd  # Work / research experience (shared)
-│   ├── _projects.qmd    # Selected projects (shared)
-│   ├── _skills.qmd      # Technical skills (shared)
-│   ├── _leadership.qmd  # Leadership & activities (shared)
-│   ├── _publications.qmd# Publications & preprints (CV)
-│   ├── _presentations.qmd# Talks & posters (CV)
-│   └── _awards.qmd      # Honors & awards (CV)
-├── README.md            # Project documentation
-└── output/              # Rendered PDFs
+├── _quarto.yml              # Project-level Quarto configuration          
+├── resume.qmd               # Resume master document (1-page, focused)
+├── cv.qmd                   # CV master document (multi-page, comprehensive)
+├── sections/                # Modular section partials
+│   ├── _contact.qmd         # Contact info (shared)
+│   ├── _education.qmd       # Education (shared)
+│   ├── _experience.qmd      # Work / research experience (shared)
+│   ├── _projects.qmd        # Selected projects (shared)
+│   ├── _skills.qmd          # Technical skills (shared)
+│   ├── _leadership.qmd      # Leadership & activities (shared)
+│   ├── _publications.qmd    # Publications & preprints (CV)
+│   ├── _presentations.qmd   # Talks & posters (CV)
+│   └── _awards.qmd          # Honors & awards (CV)
+├── README.md                # Project documentation
+└── output/                  # Rendered PDFs
     ├── Dalton Kutzen-Resume.pdf
     └── Dalton Kutzen-CV.pdf
 ```
