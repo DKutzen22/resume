@@ -1,4 +1,5 @@
 ```{=typst}
+#v(-20pt)
 #align(center)[
 ```
 [dalton@kutzen.org](mailto:dalton@kutzen.org) ·
