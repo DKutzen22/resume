@@ -1,31 +1,15 @@
 - name: "Phantom — Bacteriophage Analysis Workflow"
   link: "https://github.com/dkutzen22/phantom"
   dates: "2025 – Present"
-  show_in: ["resume", "cv"]
+  show_in: ["cv"]
   details:
     - "Modular Snakemake pipeline for phage genome annotation and downstream comparative analysis."
     - "Uses isolated Conda environments and declarative workflow rules to make runs reproducible across systems."
     - "Produces organized intermediate files, results, logs, and publication-oriented visualizations."
 
-- name: "Anchor-Op — Perturb-seq Operator Benchmark"
-  link: "https://github.com/dkutzen22/anchor-op"
-  dates: "2026"
-  show_in: ["resume", "cv"]
-  details:
-    - "Computational evaluation suite assessing whether additive-input encodings generalize to held-out perturbation targets on pooled Perturb-seq screens."
-    - "Implemented target-grouped nested cross-validation and matched-SNR controls across large-scale single-cell functional genomics datasets."
-
-- name: "Phage Visualization Tools"
+- name: "Self-Hosted Systems and Infrastructure"
   link: "https://github.com/dkutzen22"
-  dates: "2025"
-  show_in: ["resume", "cv"]
-  details:
-    - "Developed R and Python utilities for post-annotation exploration of bacteriophage genomes."
-    - "Designed figures and tables to help interpret gene content, genome architecture, and comparative results."
-
-- name: "Self-Hosted Research Infrastructure"
-  link: ""
-  dates: "Ongoing"
+  dates: "Dec 2025 - Present"
   show_in: ["resume", "cv"]
   details:
     - "Built a Linux-based environment for code hosting, containers, services, and research project organization."

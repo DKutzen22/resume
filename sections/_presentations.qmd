@@ -1,5 +1,3 @@
-# Presentations & Posters
-
 ```{=typst}
-#render-presentations()
+#render-presentations(target: doc-target)
 ```

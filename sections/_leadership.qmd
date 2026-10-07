@@ -1,5 +1,3 @@
-# Leadership & Service
-
 ```{=typst}
 #render-leadership(target: doc-target)
 ```

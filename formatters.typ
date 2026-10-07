@@ -56,9 +56,23 @@
 }
 
 // Render Education entries
-#let render-education(path: "data/education.yml") = {
+#let render-education(
+  heading: "Education",
+  path: "data/education.yml",
+  target: doc-target,
+) = {
   let entries = yaml(path)
-  for item in entries {
+  if entries == none or type(entries) != array { return }
+  let filtered = entries.filter(item => {
+    let show-in = item.at("show_in", default: ("resume", "cv"))
+    show-in.contains(target)
+  })
+  if filtered.len() == 0 { return }
+
+  if heading != none and heading != "" [
+    #heading(level: 1)[#heading]
+  ]
+  for item in filtered {
     grid(
       columns: (1fr, auto),
       align: (left, right),
@@ -74,7 +88,7 @@
       v(-4pt)
       text(fill: rgb("#1F4E79"))[#item.location]
     }
-    if "details" in item and item.details.len() > 0 {
+    if "details" in item and item.details != none and type(item.details) == array and item.details.len() > 0 {
       v(-3pt)
       list(..item.details.map(d => [#md(d)]))
     }
@@ -83,61 +97,108 @@
 }
 
 // Render Experience entries with target filtering (resume vs cv)
-#let render-experience(path: "data/experience.yml", target: "resume") = {
+#let render-experience(
+  heading: "Experience",
+  path: "data/experience.yml",
+  target: doc-target,
+) = {
   let entries = yaml(path)
-  for item in entries {
+  if entries == none or type(entries) != array { return }
+  let filtered = entries.filter(item => {
     let show-in = item.at("show_in", default: ("resume", "cv"))
-    if show-in.contains(target) {
-      cv-entry(
-        title: item.title,
-        organization: item.at("organization", default: ""),
-        location: item.at("location", default: ""),
-        date: item.at("dates", default: ""),
-        details: item.at("details", default: ()),
-        url: item.at("link", default: none),
-      )
-    }
+    show-in.contains(target)
+  })
+  if filtered.len() == 0 { return }
+
+  if heading != none and heading != "" [
+    #heading(level: 1)[#heading]
+  ]
+  for item in filtered {
+    cv-entry(
+      title: item.title,
+      organization: item.at("organization", default: ""),
+      location: item.at("location", default: ""),
+      date: item.at("dates", default: ""),
+      details: item.at("details", default: ()),
+      url: item.at("link", default: none),
+    )
   }
 }
 
 // Render Projects with target filtering
-#let render-projects(path: "data/projects.yml", target: "resume") = {
+#let render-projects(
+  heading: "Selected Projects",
+  path: "data/projects.yml",
+  target: doc-target,
+) = {
   let entries = yaml(path)
-  for item in entries {
+  if entries == none or type(entries) != array { return }
+  let filtered = entries.filter(item => {
     let show-in = item.at("show_in", default: ("resume", "cv"))
-    if show-in.contains(target) {
-      cv-entry(
-        title: item.name,
-        date: item.at("dates", default: ""),
-        details: item.at("details", default: ()),
-        url: item.at("link", default: none),
-      )
-    }
+    show-in.contains(target)
+  })
+  if filtered.len() == 0 { return }
+
+  if heading != none and heading != "" [
+    #heading(level: 1)[#heading]
+  ]
+  for item in filtered {
+    cv-entry(
+      title: item.name,
+      date: item.at("dates", default: ""),
+      details: item.at("details", default: ()),
+      url: item.at("link", default: none),
+    )
   }
 }
 
 // Render Leadership & Service entries
-#let render-leadership(path: "data/leadership.yml", target: "resume") = {
+#let render-leadership(
+  heading: "Leadership & Service",
+  path: "data/leadership.yml",
+  target: doc-target,
+) = {
   let entries = yaml(path)
-  for item in entries {
+  if entries == none or type(entries) != array { return }
+  let filtered = entries.filter(item => {
     let show-in = item.at("show_in", default: ("resume", "cv"))
-    if show-in.contains(target) {
-      cv-entry(
-        title: item.title,
-        organization: item.at("organization", default: ""),
-        location: item.at("location", default: ""),
-        date: item.at("dates", default: ""),
-        details: item.at("details", default: ()),
-        url: item.at("link", default: none),
-      )
-    }
+    show-in.contains(target)
+  })
+  if filtered.len() == 0 { return }
+
+  if heading != none and heading != "" [
+    #heading(level: 1)[#heading]
+  ]
+  for item in filtered {
+    cv-entry(
+      title: item.title,
+      organization: item.at("organization", default: ""),
+      location: item.at("location", default: ""),
+      date: item.at("dates", default: ""),
+      details: item.at("details", default: ()),
+      url: item.at("link", default: none),
+    )
   }
 }
 
 // Render Publications
-#let render-publications(path: "data/publications.yml") = {
+#let render-publications(
+  heading: "Publications & Preprints",
+  path: "data/publications.yml",
+  target: doc-target,
+) = {
   let entries = yaml(path)
-  for item in entries {
+  if entries == none or type(entries) != array { return }
+  let filtered = entries.filter(item => {
+    let show-in = item.at("show_in", default: ("resume", "cv"))
+    show-in.contains(target)
+  })
+  if filtered.len() == 0 { return }
+
+  if heading != none and heading != "" [
+    #heading(level: 1)[#heading]
+  ]
+  for item in filtered {
     [
       - #md(item.authors) (#item.year). #item.title. #emph(item.venue).
         #if "link" in item and item.link != "" [
@@ -148,9 +209,23 @@
 }
 
 // Render Presentations
-#let render-presentations(path: "data/presentations.yml") = {
+#let render-presentations(
+  heading: "Presentations & Posters",
+  path: "data/presentations.yml",
+  target: doc-target,
+) = {
   let entries = yaml(path)
-  for item in entries {
+  if entries == none or type(entries) != array { return }
+  let filtered = entries.filter(item => {
+    let show-in = item.at("show_in", default: ("resume", "cv"))
+    show-in.contains(target)
+  })
+  if filtered.len() == 0 { return }
+
+  if heading != none and heading != "" [
+    #heading(level: 1)[#heading]
+  ]
+  for item in filtered {
     [
       - #strong(item.presenter) (#item.dates). #emph(item.title). #item.type, #item.event, #item.location.
     ]
@@ -158,8 +233,22 @@
 }
 
 // Render Skills table
-#let render-skills(path: "data/skills.yml") = {
+#let render-skills(
+  heading: "Technical Skills",
+  path: "data/skills.yml",
+  target: doc-target,
+) = {
   let entries = yaml(path)
+  if entries == none or type(entries) != array { return }
+  let filtered = entries.filter(item => {
+    let show-in = item.at("show_in", default: ("resume", "cv"))
+    show-in.contains(target)
+  })
+  if filtered.len() == 0 { return }
+
+  if heading != none and heading != "" [
+    #heading(level: 1)[#heading]
+  ]
   table(
     columns: (auto, 1fr),
     stroke: none,
@@ -167,7 +256,7 @@
     table.hline(stroke: 0.5pt + luma(180)),
     table.header([*Area*], [*Tools & Proficiencies*]),
     table.hline(stroke: 0.8pt + luma(120)),
-    ..entries.map(row => (
+    ..filtered.map(row => (
       [*#row.category*],
       [#row.skills]
     )).flatten(),
@@ -176,9 +265,23 @@
 }
 
 // Render Awards
-#let render-awards(path: "data/awards.yml") = {
+#let render-awards(
+  heading: "Honors & Awards",
+  path: "data/awards.yml",
+  target: doc-target,
+) = {
   let entries = yaml(path)
-  for item in entries {
+  if entries == none or type(entries) != array { return }
+  let filtered = entries.filter(item => {
+    let show-in = item.at("show_in", default: ("resume", "cv"))
+    show-in.contains(target)
+  })
+  if filtered.len() == 0 { return }
+
+  if heading != none and heading != "" [
+    #heading(level: 1)[#heading]
+  ]
+  for item in filtered {
     grid(
       columns: (1fr, auto),
       align: (left, right),

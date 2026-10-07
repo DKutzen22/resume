@@ -1,16 +1,15 @@
 - title: "Bioinformatics Researcher"
   organization: "Terooatea Lab, Brigham Young University"
   location: "Provo, UT"
-  dates: "Sep 2025 – Present"
+  dates: "Aug 2026 – Present"
   show_in: ["resume", "cv"]
   details:
     - "Developed computational methods and benchmark evaluations for high-dimensional single-cell RNA-seq (scRNA-seq) and pooled Perturb-seq screens (`anchor-op`)."
-    - "Investigated whether linear steady-state models with additive-input encodings generalize to operator-level held-out targets across Replogle and Jost datasets."
     - "Implemented target-grouped nested cross-validation and matched signal-to-noise ratio (SNR) controls in Python to evaluate prediction performance against baseline models."
     - "Co-authored bioRxiv research on perturbation screen modeling and computational reproducibility."
 
 - title: "Research Assistant"
-  organization: "Grose Phage Lab, Brigham Young University"
+  organization: "Grose Lab, Brigham Young University"
   location: "Provo, UT"
   dates: "Sep 2025 – Present"
   show_in: ["resume", "cv"]
@@ -33,19 +32,10 @@
   organization: "Brigham Young University"
   location: "Provo, UT"
   dates: "Aug 2025 – May 2026"
-  show_in: ["resume", "cv"]
+  show_in: ["cv"]
   details:
     - "Oversaw deployment, security, and maintenance of 1,000+ campus workstations and lab computers, minimizing system downtime."
     - "Supported a community of 5,000+ users by troubleshooting hardware, software, and wireless networking issues for academic and administrative operations."
-
-- title: "Systems & Infrastructure Projects"
-  organization: "Personal Homelab"
-  location: "Provo, UT"
-  dates: "Ongoing"
-  show_in: ["resume", "cv"]
-  details:
-    - "Administer Linux servers, virtual machines, and containerized services using Proxmox and self-hosted infrastructure."
-    - "Designed practical monitoring, networking, backup, and automation workflows for resilient compute environments."
 
 - title: "Labeling and Packaging Specialist"
   organization: "Uintah Basin Herbals"
