@@ -1,15 +1,5 @@
 # Education
 
 ```{=typst}
-#grid(
-  columns: (1fr, auto),
-  align: (left, right),
-  gutter: 0pt,
-  [#strong[Brigham Young University — B.S. Molecular Biology]],
-  [Jan 2025–Apr 2028],
-)
+#render-education()
 ```
-Provo, Utah
-
-- Coursework: molecular biology, genetics, statistics, calculus, bioinformatics, machine learning, and systems biology.
-- Focused on computational approaches to genomics and reproducible biological research.

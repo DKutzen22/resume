@@ -12,6 +12,11 @@ format:
     linkcolor: "#1F4E79"
 ---
 
+```{=typst}
+#import "formatters.typ": *
+#let doc-target = "resume"
+```
+
 {{< include sections/_contact.qmd >}}
 
 {{< include sections/_education.qmd >}}

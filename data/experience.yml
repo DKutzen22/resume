@@ -1,0 +1,66 @@
+- title: "Bioinformatics Researcher"
+  organization: "Terooatea Lab, Brigham Young University"
+  location: "Provo, UT"
+  dates: "Sep 2025 – Present"
+  show_in: ["resume", "cv"]
+  details:
+    - "Developed computational methods and benchmark evaluations for high-dimensional single-cell RNA-seq (scRNA-seq) and pooled Perturb-seq screens (`anchor-op`)."
+    - "Investigated whether linear steady-state models with additive-input encodings generalize to operator-level held-out targets across Replogle and Jost datasets."
+    - "Implemented target-grouped nested cross-validation and matched signal-to-noise ratio (SNR) controls in Python to evaluate prediction performance against baseline models."
+    - "Co-authored bioRxiv research on perturbation screen modeling and computational reproducibility."
+
+- title: "Research Assistant"
+  organization: "Grose Phage Lab, Brigham Young University"
+  location: "Provo, UT"
+  dates: "Sep 2025 – Present"
+  show_in: ["resume", "cv"]
+  details:
+    - "Prepared media, cultured bacteriophages with bacterial hosts, and conducted plaque and spot assays to evaluate phage activity and host interactions."
+    - "Performed bioinformatic analyses to annotate and compare phage genomes, creating the **Phantom** Snakemake pipeline for reproducible annotation."
+    - "Integrated wet lab microbiology techniques with computational genomics to investigate phage diversity, host range, and therapeutic applications."
+
+- title: "IT Service Desk Supervisor"
+  organization: "Brigham Young University — College of Life Sciences"
+  location: "Provo, UT"
+  dates: "May 2026 – Present"
+  show_in: ["resume", "cv"]
+  details:
+    - "Lead frontline IT support for faculty, staff, and students across the College of Life Sciences, resolving high-complexity hardware, software, and systems incidents."
+    - "Mentor student technicians in troubleshooting best practices and train new hires on Life Sciences IT infrastructure, tools, and clear user communication."
+    - "Drove internal automation, documentation, and reporting initiatives that reduced repetitive workflows and standardized support delivery college-wide."
+
+- title: "IT Service Desk Technician"
+  organization: "Brigham Young University"
+  location: "Provo, UT"
+  dates: "Aug 2025 – May 2026"
+  show_in: ["resume", "cv"]
+  details:
+    - "Oversaw deployment, security, and maintenance of 1,000+ campus workstations and lab computers, minimizing system downtime."
+    - "Supported a community of 5,000+ users by troubleshooting hardware, software, and wireless networking issues for academic and administrative operations."
+
+- title: "Systems & Infrastructure Projects"
+  organization: "Personal Homelab"
+  location: "Provo, UT"
+  dates: "Ongoing"
+  show_in: ["resume", "cv"]
+  details:
+    - "Administer Linux servers, virtual machines, and containerized services using Proxmox and self-hosted infrastructure."
+    - "Designed practical monitoring, networking, backup, and automation workflows for resilient compute environments."
+
+- title: "Labeling and Packaging Specialist"
+  organization: "Uintah Basin Herbals"
+  location: "Vernal, UT"
+  dates: "Sep 2024 – Dec 2024"
+  show_in: ["cv"]
+  details:
+    - "Ensured strict compliance with Good Manufacturing Practice (GMP) standards for accurate labeling and packaging of herbal products."
+    - "Collaborated with cross-functional production teams to maintain high throughput and meet scheduled distribution deadlines."
+
+- title: "Sales Representative"
+  organization: "OptimalShip"
+  location: "Rexburg, ID"
+  dates: "Apr 2024 – Jul 2024"
+  show_in: ["cv"]
+  details:
+    - "Maintained precise customer records and data integrity within CRM systems for reliable client tracking and follow-up."
+    - "Managed and prioritized inbound and outbound client communication during peak operational hours."

@@ -1,9 +1,5 @@
-# Skills
+# Technical Skills
 
-| Area | Tools & Proficiencies |
-|---|---|
-| Computational Biology | Comparative genomics, phage genome annotation, multi-omic analysis, Snakemake, Conda, Biopython |
-| Wet Lab & Molecular Biology | bacteria & phage culturing, plaque & spot assays, media preparation, agarose gel electrophoresis, host range testing, PCR |
-| Programming & Data | Python, R, Slurm, Bash, SQL, Git, tidyverse, ggplot2, Quarto |
-| IT & Systems Infrastructure | Linux server administration, networking administration, Proxmox,  Docker, IT Service Management (ITSM), endpoint management |
-| Operations & Leadership | Good Manufacturing Practice (GMP), project management, mentoring, volunteer training (200+ individuals), CRM systems, documentation |
+```{=typst}
+#render-skills()
+```

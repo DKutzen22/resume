@@ -1,0 +1,14 @@
+- category: "Computational Biology"
+  skills: "Comparative genomics, phage genome annotation, Perturb-seq analysis, Snakemake, Conda, Biopython"
+
+- category: "Wet Lab & Molecular Biology"
+  skills: "Phage culturing, plaque & spot assays, media preparation, agarose gel electrophoresis, host range testing"
+
+- category: "Programming & Data"
+  skills: "Python, R, Bash, SQL, Git, pandas, tidyverse, ggplot2, Quarto"
+
+- category: "IT & Systems Infrastructure"
+  skills: "IT Service Management (ITSM), Linux server administration, Proxmox, Docker, 1,000+ endpoint management, networking"
+
+- category: "Operations & Leadership"
+  skills: "Good Manufacturing Practice (GMP), project management, technical mentoring, volunteer training (200+ individuals), CRM systems, documentation"

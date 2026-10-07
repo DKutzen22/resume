@@ -1,23 +1,5 @@
 # Selected Projects
 
-## Phantom — Bacteriophage Analysis Workflow
-
-[GitHub repository](https://github.com/your-username/phantom)
-
-- Modular Snakemake pipeline for phage genome annotation and downstream comparative analysis.
-- Uses isolated Conda environments and declarative workflow rules to make runs reproducible across systems.
-- Produces organized intermediate files, results, logs, and publication-oriented visualizations.
-
-## Phage Visualization Tools
-
-[GitHub repository](https://github.com/your-username)
-
-- Developed R and Python utilities for post-annotation exploration of bacteriophage genomes.
-- Designed figures and tables to help interpret gene content, genome architecture, and comparative results.
-
-## Self-Hosted Research Infrastructure
-
-[Project documentation](https://your-site.example/projects)
-
-- Built a Linux-based environment for code hosting, containers, services, and research project organization.
-- Applied infrastructure-as-code and documentation practices to reduce configuration drift.
+```{=typst}
+#render-projects(target: doc-target)
+```

@@ -1,3 +1,5 @@
 # Honors & Awards
 
-- **[Scholarship / Dean's List / Award Name]**, Brigham Young University (2025)
+```{=typst}
+#render-awards()
+```

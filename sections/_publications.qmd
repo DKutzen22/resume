@@ -1,3 +1,5 @@
 # Publications & Preprints
 
-- **Kutzen, D.**, [Co-authors]. (2025). Phantom: A reproducible Snakemake pipeline for bacteriophage genome annotation and comparative genomics. *(In preparation / Preprint)*.
+```{=typst}
+#render-publications()
+```

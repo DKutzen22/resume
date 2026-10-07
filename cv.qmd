@@ -13,6 +13,11 @@ format:
     linkcolor: "#1F4E79"
 ---
 
+```{=typst}
+#import "formatters.typ": *
+#let doc-target = "cv"
+```
+
 {{< include sections/_contact.qmd >}}
 
 {{< include sections/_education.qmd >}}
@@ -27,6 +32,6 @@ format:
 
 {{< include sections/_skills.qmd >}}
 
-{{< include sections/_awards.qmd >}}
-
 {{< include sections/_leadership.qmd >}}
+
+{{< include sections/_awards.qmd >}}
