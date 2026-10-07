@@ -1,3 +1,5 @@
+# Honors & Awards
+
 ```{=typst}
-#render-awards(target: doc-target)
+#render-awards()
 ```

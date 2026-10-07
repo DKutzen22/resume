@@ -57,7 +57,7 @@
 
 // Render Education entries
 #let render-education(
-  heading: "Education",
+  title: "Education",
   path: "data/education.yml",
   target: doc-target,
 ) = {
@@ -69,8 +69,8 @@
   })
   if filtered.len() == 0 { return }
 
-  if heading != none and heading != "" [
-    #heading(level: 1)[#heading]
+  if title != none and title != "" [
+    #heading(level: 1)[#title]
   ]
   for item in filtered {
     grid(
@@ -98,7 +98,7 @@
 
 // Render Experience entries with target filtering (resume vs cv)
 #let render-experience(
-  heading: "Experience",
+  title: "Experience",
   path: "data/experience.yml",
   target: doc-target,
 ) = {
@@ -110,8 +110,8 @@
   })
   if filtered.len() == 0 { return }
 
-  if heading != none and heading != "" [
-    #heading(level: 1)[#heading]
+  if title != none and title != "" [
+    #heading(level: 1)[#title]
   ]
   for item in filtered {
     cv-entry(
@@ -127,7 +127,7 @@
 
 // Render Projects with target filtering
 #let render-projects(
-  heading: "Selected Projects",
+  title: "Selected Projects",
   path: "data/projects.yml",
   target: doc-target,
 ) = {
@@ -139,8 +139,8 @@
   })
   if filtered.len() == 0 { return }
 
-  if heading != none and heading != "" [
-    #heading(level: 1)[#heading]
+  if title != none and title != "" [
+    #heading(level: 1)[#title]
   ]
   for item in filtered {
     cv-entry(
@@ -154,7 +154,7 @@
 
 // Render Leadership & Service entries
 #let render-leadership(
-  heading: "Leadership & Service",
+  title: "Leadership & Service",
   path: "data/leadership.yml",
   target: doc-target,
 ) = {
@@ -166,8 +166,8 @@
   })
   if filtered.len() == 0 { return }
 
-  if heading != none and heading != "" [
-    #heading(level: 1)[#heading]
+  if title != none and title != "" [
+    #heading(level: 1)[#title]
   ]
   for item in filtered {
     cv-entry(
@@ -183,7 +183,7 @@
 
 // Render Publications
 #let render-publications(
-  heading: "Publications & Preprints",
+  title: "Publications & Preprints",
   path: "data/publications.yml",
   target: doc-target,
 ) = {
@@ -195,8 +195,8 @@
   })
   if filtered.len() == 0 { return }
 
-  if heading != none and heading != "" [
-    #heading(level: 1)[#heading]
+  if title != none and title != "" [
+    #heading(level: 1)[#title]
   ]
   for item in filtered {
     [
@@ -210,7 +210,7 @@
 
 // Render Presentations
 #let render-presentations(
-  heading: "Presentations & Posters",
+  title: "Presentations & Posters",
   path: "data/presentations.yml",
   target: doc-target,
 ) = {
@@ -222,8 +222,8 @@
   })
   if filtered.len() == 0 { return }
 
-  if heading != none and heading != "" [
-    #heading(level: 1)[#heading]
+  if title != none and title != "" [
+    #heading(level: 1)[#title]
   ]
   for item in filtered {
     [
@@ -234,7 +234,7 @@
 
 // Render Skills table
 #let render-skills(
-  heading: "Technical Skills",
+  title: "Technical Skills",
   path: "data/skills.yml",
   target: doc-target,
 ) = {
@@ -246,8 +246,8 @@
   })
   if filtered.len() == 0 { return }
 
-  if heading != none and heading != "" [
-    #heading(level: 1)[#heading]
+  if title != none and title != "" [
+    #heading(level: 1)[#title]
   ]
   table(
     columns: (auto, 1fr),
@@ -266,7 +266,7 @@
 
 // Render Awards
 #let render-awards(
-  heading: "Honors & Awards",
+  title: "Honors & Awards",
   path: "data/awards.yml",
   target: doc-target,
 ) = {
@@ -278,8 +278,8 @@
   })
   if filtered.len() == 0 { return }
 
-  if heading != none and heading != "" [
-    #heading(level: 1)[#heading]
+  if title != none and title != "" [
+    #heading(level: 1)[#title]
   ]
   for item in filtered {
     grid(

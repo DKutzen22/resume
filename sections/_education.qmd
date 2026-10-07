@@ -1,3 +1,5 @@
+# Education
+
 ```{=typst}
-#render-education(target: doc-target)
+#render-education()
 ```

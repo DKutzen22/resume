@@ -1,3 +1,5 @@
+# Publications & Preprints
+
 ```{=typst}
-#render-publications(target: doc-target)
+#render-publications()
 ```

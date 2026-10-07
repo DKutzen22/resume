@@ -1,3 +1,5 @@
+# Skills
+
 ```{=typst}
-#render-skills(target: doc-target)
+#render-skills()
 ```

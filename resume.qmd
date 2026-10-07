@@ -23,14 +23,8 @@ format:
 
 {{< include sections/_experience.qmd >}}
 
-{{< include sections/_publications.qmd >}}
-
-{{< include sections/_presentations.qmd >}}
-
 {{< include sections/_projects.qmd >}}
 
 {{< include sections/_skills.qmd >}}
 
 {{< include sections/_leadership.qmd >}}
-
-{{< include sections/_awards.qmd >}}
