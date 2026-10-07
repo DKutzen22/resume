@@ -1,8 +1,6 @@
 ```{=typst}
 #align(center)[
 ```
-Provo, Utah
-
 [dalton@kutzen.org](mailto:dalton@kutzen.org) ·
 [GitHub.com/dkutzen22](https://github.com/dkutzen22) ·
 [LinkedIn.com/in/daltonkutzen](https://www.linkedin.com/in/daltonkutzen)

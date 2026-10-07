@@ -1,4 +1,4 @@
-# Technical Skills
+# Skills
 
 ```{=typst}
 #render-skills()

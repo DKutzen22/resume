@@ -1,4 +1,4 @@
-# Selected Projects
+# Projects
 
 ```{=typst}
 #render-projects(target: doc-target)
