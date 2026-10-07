@@ -127,7 +127,7 @@
 
 // Render Projects with target filtering
 #let render-projects(
-  title: "Selected Projects",
+  title: "Projects",
   path: "data/projects.yml",
   target: doc-target,
 ) = {
@@ -234,7 +234,7 @@
 
 // Render Skills table
 #let render-skills(
-  title: "Technical Skills",
+  title: "Skills",
   path: "data/skills.yml",
   target: doc-target,
 ) = {

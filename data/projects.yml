@@ -1,6 +1,6 @@
 - name: "Phantom — Bacteriophage Analysis Workflow"
   link: "https://github.com/dkutzen22/phantom"
-  dates: "2025 – Present"
+  dates: "Jun 2026 – Present"
   show_in: ["cv"]
   details:
     - "Modular Snakemake pipeline for phage genome annotation and downstream comparative analysis."

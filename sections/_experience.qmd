@@ -1,5 +1,3 @@
-# Experience
-
 ```{=typst}
 #render-experience(target: doc-target)
 ```
