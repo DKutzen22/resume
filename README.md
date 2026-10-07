@@ -1,4 +1,4 @@
-# Dalton Kutzen Resume
+# Dalton Kutzen - Resume & CV
 
 A reproducible resume built with [Quarto](https://quarto.org/) and rendered to PDF with [Typst](https://typst.app/).
 
@@ -23,31 +23,42 @@ quarto check
 ```text
 .
 ├── _quarto.yml          # Project-level Quarto configuration
-├── resume.qmd           # Resume content and document metadata
-├── resume-style.typ     # Optional Typst styling rules
+├── resume.qmd           # Resume master document (1-page focused)
+├── cv.qmd               # CV master document (multi-page comprehensive)
+├── sections/            # Modular section partials
+│   ├── _contact.qmd     # Contact info (shared)
+│   ├── _education.qmd   # Education (shared)
+│   ├── _experience.qmd  # Work / research experience (shared)
+│   ├── _projects.qmd    # Selected projects (shared)
+│   ├── _skills.qmd      # Technical skills (shared)
+│   ├── _leadership.qmd  # Leadership & activities (shared)
+│   ├── _publications.qmd# Publications & preprints (CV)
+│   ├── _presentations.qmd# Talks & posters (CV)
+│   └── _awards.qmd      # Honors & awards (CV)
 ├── README.md            # Project documentation
-└── output/              # Rendered files; generated locally
-    └── Dalton-Kutzen-Resume.pdf
+└── output/              # Rendered PDFs
+    ├── Dalton Kutzen-Resume.pdf
+    └── Dalton Kutzen-CV.pdf
 ```
 
-## Render the Resume
+## Render Documents
 
 From the project directory, run:
 
 ```bash
-quarto render resume.qmd --to typst
-```
-
-Or render every Quarto document and configured output in the project:
-
-```bash
+# Render both Resume and CV
 quarto render
+
+# Or render individually:
+quarto render resume.qmd --to typst
+quarto render cv.qmd --to typst
 ```
 
-The rendered PDF is written to:
+The rendered PDFs are saved to:
 
 ```text
 output/Dalton-Kutzen-Resume.pdf
+output/Dalton-Kutzen-CV.pdf
 ```
 
 The output directory is configured in `_quarto.yml`.

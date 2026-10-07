@@ -1,0 +1,18 @@
+# Experience
+
+## Bioinformatics Researcher / Software Developer
+
+[Lab, Project, or Organization] · Provo, Utah · [Month Year]–Present
+
+- Developed **Phantom**, a reproducible Snakemake workflow for bacteriophage genome annotation, comparative genomics, and post-annotation analysis.
+- Built Python and R tools for genomic data processing, visualization, and research-ready reports.
+- Used Conda environments, GitHub Actions, Git, and structured configuration files to make analyses portable and repeatable.
+- Documented workflows and computational assumptions to support collaboration and reproducibility.
+
+## Systems and Infrastructure Projects
+
+Personal homelab · [Month Year]–Present
+
+- Administer Linux servers, containers, and virtual machines using Proxmox and self-hosted services.
+- Designed practical monitoring, networking, backup, and automation workflows for reliable personal infrastructure.
+- Evaluated hardware with attention to cost, power use, repairability, and future expansion.
