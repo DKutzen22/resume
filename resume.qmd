@@ -14,17 +14,21 @@ format:
 
 ```{=typst}
 #import "formatters.typ": *
+#show: heading-style
 #let doc-target = "resume"
+
+#v(-20pt)
+#align(center)[
+  #link("mailto:dalton@kutzen.org")
+  #text(fill: luma(55%))[ · ]
+  #link("[https://github.com/dkutzen22](https://github.com/dkutzen22)")[GitHub.com/dkutzen22]
+  #text(fill: luma(55%))[ · ]
+  #link("[https://www.linkedin.com/in/daltonkutzen](https://www.linkedin.com/in/daltonkutzen)")[LinkedIn.com/in/daltonkutzen]
+]
+
+#render-education(target: "resume")
+#render-experience(target: "resume")
+#render-projects(target: "resume")
+#render-skills(target: "resume")
+#render-leadership(target: "resume")
 ```
-
-{{< include sections/_contact.qmd >}}
-
-{{< include sections/_education.qmd >}}
-
-{{< include sections/_experience.qmd >}}
-
-{{< include sections/_projects.qmd >}}
-
-{{< include sections/_skills.qmd >}}
-
-{{< include sections/_leadership.qmd >}}

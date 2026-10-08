@@ -16,23 +16,24 @@ format:
 
 ```{=typst}
 #import "formatters.typ": *
+#show: heading-style
 #let doc-target = "cv"
+
+#v(-20pt)
+#align(center)[
+  #link("mailto:dalton@kutzen.org")
+  #text(fill: luma(55%))[ · ]
+  #link("[https://github.com/dkutzen22](https://github.com/dkutzen22)")[GitHub.com/dkutzen22]
+  #text(fill: luma(55%))[ · ]
+  #link("[https://www.linkedin.com/in/daltonkutzen](https://www.linkedin.com/in/daltonkutzen)")[LinkedIn.com/in/daltonkutzen]
+]
+
+#render-education(target: "cv")
+#render-experience(target: "cv")
+#render-publications(target: "cv")
+#render-presentations(target: "cv")
+#render-projects(target: "cv")
+#render-skills(target: "cv")
+#render-leadership(target: "cv")
+#render-awards(target: "cv")
 ```
-
-{{< include sections/_contact.qmd >}}
-
-{{< include sections/_education.qmd >}}
-
-{{< include sections/_experience.qmd >}}
-
-{{< include sections/_publications.qmd >}}
-
-{{< include sections/_presentations.qmd >}}
-
-{{< include sections/_projects.qmd >}}
-
-{{< include sections/_skills.qmd >}}
-
-{{< include sections/_leadership.qmd >}}
-
-{{< include sections/_awards.qmd >}}

@@ -3,12 +3,20 @@
 #let doc-target = "resume"
 #let accent-color = rgb("#1F4E79")
 
-// Horizontal divider rule under all section headings
-#show heading.where(level: 1): it => block(width: 100%, above: 12pt, below: 6pt)[
-  #it.body
-  #v(-2pt)
-  #line(length: 100%, stroke: 0.5pt + accent-color)
-]
+#let heading-style(body) = {
+  show heading.where(level: 1): it => block(
+    width: 100%,
+    above: 1em,
+    below: 0.5em,
+  )[
+    #set text(size: 1.15em, weight: "bold")
+    #it.body
+    #v(-.85em)
+    #line(length: 100%, stroke: 0.5pt + accent-color)
+  ]
+
+  body
+}
 
 #let md(text-str) = {
   if type(text-str) != str { return text-str }
@@ -60,7 +68,7 @@
     v(-3pt)
     list(..details.map(d => [#md(d)]))
   }
-  v(3pt)
+  v(1.5pt)
 }
 
 // Render Education entries
@@ -242,7 +250,7 @@
 
 // Render Skills table
 #let render-skills(
-  title: "Technical Skills",
+  title: "Skills",
   path: "data/skills.yml",
   target: doc-target,
 ) = {
@@ -257,18 +265,17 @@
   if title != none and title != "" [
     #heading(level: 1)[#title]
   ]
+  v(-0.75em)
   table(
     columns: (auto, 1fr),
     stroke: none,
     align: (left, left),
-    table.hline(stroke: 0.5pt + luma(180)),
     table.header([*Area*], [*Tools & Proficiencies*]),
     table.hline(stroke: 0.8pt + luma(120)),
     ..filtered.map(row => (
       [*#row.category*],
       [#row.skills]
     )).flatten(),
-    table.hline(stroke: 0.5pt + luma(180))
   )
 }
 
@@ -303,3 +310,5 @@
     )
   }
 }
+
+
