@@ -1,3 +1,0 @@
-```{=typst}
-#render-projects(target: doc-target)
-```
