@@ -216,7 +216,7 @@
   ]
   for item in filtered {
     [
-      - #md(item.authors) (#item.year). #item.title. #emph(item.venue).
+      - #md(item.authors) (#item.year). #emph(item.title). #item.status, #emph(item.venue).
         #if "link" in item and item.link != "" [
           [#link(item.link)[#item.at("code_repo", default: "Code")]]
         ]
@@ -243,8 +243,8 @@
   ]
   for item in filtered {
     [
-      - #strong(item.presenter) (#item.dates). #emph(item.title). #item.type, #item.event, #item.location.
-    ]
+      - #md(item.presenters) (#item.dates). #emph(item.title). #item.type, #item.event, #item.location
+        ]
   }
 }
 
