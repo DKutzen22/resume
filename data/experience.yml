@@ -2,7 +2,7 @@
   organization: "Terooatea Lab, Brigham Young University"
   location: "Provo, UT"
   dates: "Aug 2026 – Present"
-  show_in: ["cv"]
+  show_in: ["resume", "cv"]
   details:
     - "Developed computational methods and benchmark evaluations for high-dimensional single-cell RNA-seq (scRNA-seq) and pooled Perturb-seq screens (`anchor-op`)."
     - "Implemented target-grouped nested cross-validation and matched signal-to-noise ratio (SNR) controls in Python to evaluate prediction performance against baseline models."
@@ -24,15 +24,11 @@
   dates: "May 2026 – Present"
   show_in: ["resume", "cv"]
   details:
-    - "Lead frontline IT support for faculty, staff, and students across the College of Life Sciences, resolving high-complexity hardware, software, and systems incidents."
     - "Mentor student technicians in troubleshooting best practices and train new hires on Life Sciences IT infrastructure, tools, and clear user communication."
     - "Drove internal automation, documentation, and reporting initiatives that reduced repetitive workflows and standardized support delivery college-wide."
 
 - title: "IT Service Desk Technician"
-  organization: "College of Life Sciences, Brigham Young University"
-  location: "Provo, UT"
   dates: "Aug 2025 – May 2026"
   show_in: ["resume", "cv"]
   details:
-    - "Oversaw deployment, security, and maintenance of 1,000+ campus workstations and lab computers, minimizing system downtime."
-    - "Supported a community of 5,000+ users by troubleshooting hardware, software, and wireless networking issues for academic and administrative operations."
+    - "Oversaw deployment, security, and maintenance of 1,000+ campus workstations and lab computers, Supporting a community of 5,000+ users"

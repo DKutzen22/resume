@@ -1,5 +1,5 @@
 - category: "Computational Biology"
-  skills: "Comparative genomics, Snakemake, Conda, Biopython"
+  skills: "Multi-omics analysis, comparative genomics, Snakemake, Conda, Biopython"
 
 - category: "Wet Lab & Molecular Biology"
   skills: "Phage and bacterial culturing, plaque & spot assays, host range testing, media preparation, agarose gel electrophoresis"
@@ -8,7 +8,5 @@
   skills: "Python, R, Bash, SQL, Git, pandas, tidyverse, ggplot2, Quarto"
 
 - category: "IT & Systems Infrastructure"
-  skills: "IT Service Management (ITSM), Linux server administration, Proxmox, Docker, 1,000+ endpoint management, networking"
+  skills: "IT Service Management (ITSM), Linux server administration, Proxmox, Docker, enterprise endpoint management, networking, project management, technical mentoring, documentation"
 
-- category: "Operations & Leadership"
-  skills: "project management, technical mentoring, documentation"

@@ -5,7 +5,6 @@
   details:
     - "Modular Snakemake pipeline for phage genome annotation and downstream comparative analysis."
     - "Uses isolated Conda environments and declarative workflow rules to make runs reproducible across systems."
-    - "Produces organized intermediate files, results, logs, and publication-oriented visualizations."
 
 - name: "Self-Hosted Systems and Infrastructure"
   link: "https://github.com/dkutzen22"
