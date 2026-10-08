@@ -1,17 +1,12 @@
-
-- name: "Sacramento Alumni Association Scholarship"
-  institution: "Brigham Young University"
-  dates: "Winter 2027"
-
 - name: "Experiential Learning Grant"
-  institution: "Department of Micro and Molecular Biology - Brigham Young University"
+  institution: "Department of Micro and Molecular Biology, Brigham Young University"
   dates: "Fall 2026"
 
 - name: "William Bartlett Hebard Scholarship"
-  institution: "College of Life Sciences - Brigham Young University"
+  institution: "College of Life Sciences, Brigham Young University"
   dates: "Fall 2026"
 
 - name: "Experiential Learning Grant"
-  institution: "Department of Micro and Molecular Biology - Brigham Young University"
+  institution: "Department of Micro and Molecular Biology, Brigham Young University"
   dates: "Spring 2026"
 

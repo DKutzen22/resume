@@ -3,5 +3,6 @@
   status: "preprint"
   venue: "bioRxiv"
   year: "2026"
-  link: "https://doi.org/10.64898/2026.09.30.755776"
-  code_repo: "anchor-op"
+  code_link: "https://github.com/manarai/Anchor-op"
+  code_name: "Code"
+  pub_link: "https://doi.org/10.64898/2026.09.30.755776"

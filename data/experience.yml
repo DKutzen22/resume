@@ -5,8 +5,7 @@
   show_in: ["resume", "cv"]
   details:
     - "Developed computational methods and benchmark evaluations for high-dimensional single-cell RNA-seq (scRNA-seq) and pooled Perturb-seq screens (`anchor-op`)."
-    - "Implemented target-grouped nested cross-validation and matched signal-to-noise ratio (SNR) controls in Python to evaluate prediction performance against baseline models."
-    - "Co-authored bioRxiv research on perturbation screen modeling and computational reproducibility."
+    - "Evaluated whether additive-input models generalize to unseen perturbation targets in pooled Perturb-seq screens."
 
 - title: "Research Assistant"
   organization: "Grose Lab, Brigham Young University"
@@ -28,7 +27,9 @@
     - "Drove internal automation, documentation, and reporting initiatives that reduced repetitive workflows and standardized support delivery college-wide."
 
 - title: "IT Service Desk Technician"
+  organization: "College of Life Sciences, Brigham Young University"
+  location: "Provo, UT"
   dates: "Aug 2025 – May 2026"
   show_in: ["resume", "cv"]
   details:
-    - "Oversaw deployment, security, and maintenance of 1,000+ campus workstations and lab computers, Supporting a community of 5,000+ users"
+    - "Supported deployment, security, and maintenance of 1,000+ campus workstations and lab computers serving a community of 5,000+ users."

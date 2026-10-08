@@ -1,5 +1,5 @@
 - category: "Computational Biology"
-  skills: "Multi-omics analysis, comparative genomics, Snakemake, Conda, Biopython"
+  skills: "Single-cell transcriptomics, Perturb-seq analysis, comparative genomics, Snakemake, Conda, Biopython"
 
 - category: "Wet Lab & Molecular Biology"
   skills: "Phage and bacterial culturing, plaque & spot assays, host range testing, media preparation, agarose gel electrophoresis"

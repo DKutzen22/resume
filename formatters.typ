@@ -114,7 +114,7 @@
 
 // Render Experience entries with target filtering (resume vs cv)
 #let render-experience(
-  title: "Experience",
+  title: "Research & Professional Experience",
   path: "data/experience.yml",
   target: doc-target,
 ) = {
@@ -216,9 +216,14 @@
   ]
   for item in filtered {
     [
-      - #md(item.authors) (#item.year). #emph(item.title). #item.status, #emph(item.venue).
-        #if "link" in item and item.link != "" [
-          [#link(item.link)[#item.at("code_repo", default: "Code")]]
+      - #md(item.authors) (#item.year). #emph(item.title).
+        #if "pub_link" in item and item.pub_link != "" [
+          #link(item.pub_link)[#item.status,]
+          ] else [
+          #item.status,
+        ]#emph(item.venue).
+        #if "code_link" in item and item.code_link != "" [
+          [#link(item.code_link)[#item.at("code_name", default: "Code")]]
         ]
     ]
   }
