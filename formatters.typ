@@ -1,6 +1,14 @@
 // formatters.typ - Reusable Typst layout and YAML rendering engine
 
 #let doc-target = "resume"
+#let accent-color = rgb("#1F4E79")
+
+// Horizontal divider rule under all section headings
+#show heading.where(level: 1): it => block(width: 100%, above: 12pt, below: 6pt)[
+  #it.body
+  #v(-2pt)
+  #line(length: 100%, stroke: 0.5pt + accent-color)
+]
 
 #let md(text-str) = {
   if type(text-str) != str { return text-str }
@@ -42,7 +50,7 @@
   )
   if organization != "" or location != "" {
     v(-4pt)
-    text(fill: rgb("#1F4E79"))[
+    text(fill: accent-color)[
       #if organization != "" [#organization]
       #if organization != "" and location != "" [ · ]
       #if location != "" [#text(fill: luma(80))[#location]]
@@ -86,7 +94,7 @@
     )
     if "location" in item and item.location != "" {
       v(-4pt)
-      text(fill: rgb("#1F4E79"))[#item.location]
+      text(fill: accent-color)[#item.location]
     }
     if "details" in item and item.details != none and type(item.details) == array and item.details.len() > 0 {
       v(-3pt)
@@ -127,7 +135,7 @@
 
 // Render Projects with target filtering
 #let render-projects(
-  title: "Projects",
+  title: "Selected Projects",
   path: "data/projects.yml",
   target: doc-target,
 ) = {
@@ -234,7 +242,7 @@
 
 // Render Skills table
 #let render-skills(
-  title: "Skills",
+  title: "Technical Skills",
   path: "data/skills.yml",
   target: doc-target,
 ) = {
