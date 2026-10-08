@@ -1,161 +1,173 @@
-# Dalton Kutzen — Resume & CV
+# Dalton Kutzen - Resume & CV
 
-A reproducible resume and academic CV built with [Quarto](https://quarto.org/) and rendered to PDF using [Typst](https://typst.app/).
+A reproducible resume built with [Quarto](https://quarto.org/) and rendered to PDF with [Typst](https://typst.app/).
 
-All biographical and professional content is maintained as structured YAML files in `data/`. The documents are automatically formatted by a shared Typst engine (`formatters.typ`), which aligns dates to the right margin, formats markdown syntax inside bullet points, and suppresses empty sections based on document scoping (`resume` vs `cv`).
-
----
+The resume content lives in a plain-text `.qmd` file, making it easy to maintain in Git, tailor for different applications, and regenerate without manually editing a PDF.
 
 ## Requirements
 
 Install Quarto:
-- [Quarto Installation Guide](https://quarto.org/docs/get-started/)
 
-Quarto bundles native Typst support for rendering PDFs without requiring a LaTeX installation.
+- [Quarto installation instructions](https://quarto.org/docs/get-started/)
 
-Verify your installation:
+Quarto includes support for rendering Typst-based PDF documents. No full LaTeX installation is required.
+
+To verify your installation:
+
 ```bash
 quarto check
 ```
-
----
 
 ## Project Structure
 
 ```text
 .
-├── _quarto.yml              # Quarto project configuration
-├── resume.qmd               # Resume master document (1-page, industry/lab focused)
-├── cv.qmd                   # CV master document (multi-page, academic/research comprehensive)
-├── formatters.typ           # Typst layout engine (right-aligned dates, auto-suppression)
-├── data/                    # Structured YAML data sources
-│   ├── education.yml        # Degrees, coursework, institution
-│   ├── experience.yml       # Research, software, and IT roles
-│   ├── projects.yml         # Selected projects and repositories
-│   ├── publications.yml     # Preprints and journal publications
-│   ├── presentations.yml    # Conference talks and poster presentations
-│   ├── skills.yml           # Grouped technical competencies table
-│   ├── leadership.yml       # Mentorship, civic engagement, initiative leads
-│   └── awards.yml           # Scholarships, grants, and honors
-├── sections/                # Quarto partials invoking Typst formatters
-│   ├── _contact.qmd         # Centered contact block
-│   ├── _education.qmd       # Calls #render-education(target: doc-target)
-│   ├── _experience.qmd      # Calls #render-experience(target: doc-target)
-│   ├── _projects.qmd        # Calls #render-projects(target: doc-target)
-│   ├── _skills.qmd          # Calls #render-skills(target: doc-target)
-│   ├── _leadership.qmd      # Calls #render-leadership(target: doc-target)
-│   ├── _publications.qmd    # Calls #render-publications(target: doc-target)
-│   ├── _presentations.qmd   # Calls #render-presentations(target: doc-target)
-│   └── _awards.qmd          # Calls #render-awards(target: doc-target)
+├── _quarto.yml              # Project-level Quarto configuration          
+├── resume.qmd               # Resume master document (1-page, focused)
+├── cv.qmd                   # CV master document (multi-page, comprehensive)
+├── sections/                # Modular section partials
+│   ├── _contact.qmd         # Contact info (shared)
+│   ├── _education.qmd       # Education (shared)
+│   ├── _experience.qmd      # Work / research experience (shared)
+│   ├── _projects.qmd        # Selected projects (shared)
+│   ├── _skills.qmd          # Technical skills (shared)
+│   ├── _leadership.qmd      # Leadership & activities (shared)
+│   ├── _publications.qmd    # Publications & preprints (CV)
+│   ├── _presentations.qmd   # Talks & posters (CV)
+│   └── _awards.qmd          # Honors & awards (CV)
 ├── README.md                # Project documentation
-└── output/                  # Rendered PDF output
-    ├── Dalton_Kutzen-Resume.pdf
-    └── Dalton_Kutzen-CV.pdf
+└── output/                  # Rendered PDFs
+    ├── Dalton Kutzen-Resume.pdf
+    └── Dalton Kutzen-CV.pdf
 ```
 
----
+## Render Documents
 
-## Rendering Documents
-
-Render both Resume and CV simultaneously:
+From the project directory, run:
 
 ```bash
+# Render both Resume and CV
 quarto render
+
+# Or render individually:
+quarto render resume.qmd --to typst
+quarto render cv.qmd --to typst
 ```
 
-Or render individually:
+The rendered PDFs are saved to:
 
-```bash
-quarto render resume.qmd
-quarto render cv.qmd
+```text
+output/Dalton-Kutzen-Resume.pdf
+output/Dalton-Kutzen-CV.pdf
 ```
 
-Rendered outputs are written to `output/`:
-- `output/Dalton_Kutzen-Resume.pdf`
-- `output/Dalton_Kutzen-CV.pdf`
+The output directory is configured in `_quarto.yml`.
 
----
+## Preview in Positron
 
-## Preview in Positron / VS Code
+To preview the document in Positron:
 
-1. Open `resume.qmd` or `cv.qmd`.
-2. Open the Command Palette (`Ctrl+Shift+P`).
-3. Run **Quarto: Preview Format** and select **Typst** or **PDF**.
-4. Edits to any file in `data/` will automatically trigger a live recompile in the preview pane.
+1. Open `resume.qmd`.
+2. Open the Command Palette with `Ctrl+Shift+P`.
+3. Run **Quarto: Preview Format**.
+4. Choose **Typst** or **PDF**.
 
----
+For a final build without live preview, use **Quarto: Render Document** or run the render command in Positron’s integrated terminal.
 
-## How It Works
+## Change the Displayed Name
 
-### 1. Document Scoping (`show_in`)
-
-Each entry in a YAML file can specify which document(s) it belongs to using `show_in`:
+Edit the YAML front matter at the top of `resume.qmd`:
 
 ```yaml
-- title: "Bioinformatics Researcher"
-  organization: "Terooatea Lab, Brigham Young University"
-  location: "Provo, UT"
-  dates: "Aug 2026 – Present"
-  show_in: ["resume", "cv"]   # Appears in both
-  details:
-    - "Developed computational methods for single-cell Perturb-seq screens (`anchor-op`)."
-
-- title: "IT Service Desk Technician"
-  organization: "Brigham Young University"
-  location: "Provo, UT"
-  dates: "Aug 2025 – May 2026"
-  show_in: ["cv"]             # Only appears in the CV
-  details:
-    - "Managed deployment and security across 1,000+ campus workstations."
+***
+title: "Dalton Kutzen"
+author: "Dalton Kutzen"
+output-file: "Dalton-Kutzen-Resume"
+***
 ```
 
-- **`show_in: ["resume", "cv"]`**: Appears in both documents.
-- **`show_in: ["cv"]`**: Appears only in the CV.
-- **`show_in: ["resume"]`**: Appears only in the Resume.
-- *(If omitted, entries default to `["resume", "cv"]`)*.
+- `title` controls the name displayed at the top of the document.
+- `author` supplies document metadata.
+- `output-file` controls the generated PDF filename.
 
-### 2. Automatic Section Suppression
+For example:
 
-Both `resume.qmd` and `cv.qmd` include all section partials. If a section has **0 entries scoped to the target document** (for example, if all publications are tagged `show_in: ["cv"]`), the Typst formatter automatically suppresses the section entirely—**no empty heading or whitespace is rendered** on the resume.
+```yaml
+output-file: "Dalton-Kutzen-Bioinformatics-Resume"
+```
 
-### 3. Date Alignment & Typography
+will generate:
 
-The Typst module [`formatters.typ`](formatters.typ) uses responsive two-column grids:
+```text
+output/Dalton-Kutzen-Bioinformatics-Resume.pdf
+```
 
-```typst
+## Formatting Dates on the Right
+
+Use a raw Typst grid for education, experience, and project headings with dates aligned to the right margin:
+
+````markdown
+```{=typst}
 #grid(
   columns: (1fr, auto),
   align: (left, right),
-  [#strong(title)],
-  [#date]
+  gutter: 0pt,
+  [#strong[Brigham Young University — B.S. Molecular Biology]],
+  [Expected Apr. 2027],
+)
+```
+````
+
+This produces a layout similar to:
+
+```text
+Brigham Young University — B.S. Molecular Biology       Expected Apr. 2027
+```
+
+A typical education entry might look like:
+
+````markdown
+## Education
+
+```{=typst}
+#grid(
+  columns: (1fr, auto),
+  align: (left, right),
+  gutter: 0pt,
+  [#strong[Brigham Young University]],
+  [Expected Apr. 2027],
 )
 ```
 
-This guarantees dates stay flush with the right margin regardless of title length. Bullet points also support standard Markdown formatting such as `**bold**`, `` `code` ``, and `[links](url)`.
+B.S. Molecular Biology · Provo, Utah
 
----
+- Relevant coursework: molecular biology, genetics, statistics, calculus, and bioinformatics.
+````
 
-## Customizing Layout and Styling
+## Contact Block
 
-### Margins and Font Sizes
+For a centered contact block in Typst/PDF output, use raw Typst alignment:
 
-Modify the YAML header in `resume.qmd` or `cv.qmd`:
-
-```yaml
-format:
-  typst:
-    papersize: us-letter
-    margin:
-      x: 0.62in
-      y: 0.55in
-    fontsize: 9.5pt
-    linkcolor: "#1F4E79"
+````markdown
+```{=typst}
+#align(center)[
 ```
 
-### Changing Output Filenames
+Provo, Utah ·
+[dalton@kutzen.org](mailto:dalton@kutzen.org) ·
+[GitHub](https://github.com/dkutzen22) ·
+[LinkedIn](https://www.linkedin.com/in/daltonkutzen)
 
-In `resume.qmd` or `cv.qmd`:
-
-```yaml
-output-file: "Dalton_Kutzen-Resume"
+```{=typst}
+]
 ```
+````
+
+Do not rely on HTML-only CSS such as:
+
+```markdown
+style="text-align: center;"
+```
+
+when rendering to Typst. Native Typst alignment is more reliable for PDF output.
+
